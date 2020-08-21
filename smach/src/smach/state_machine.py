@@ -283,8 +283,8 @@ class StateMachine(smach.container.Container):
             self._set_current_state(transition_target)
 
             # Spew some info
-            smach.loginfo("State machine transitioning '%s':'%s'-->'%s'" %
-                          (last_state_label, outcome, transition_target))
+            # smach.loginfo("State machine transitioning '%s':'%s'-->'%s'" %
+            #              (last_state_label, outcome, transition_target))
 
             # Call transition callbacks
             self.call_transition_cbs()
